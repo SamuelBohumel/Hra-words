@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styly.css" rel="stylesheet">   
+        <title>Slovičkáreň</title>
+        <link rel="icon" type="image/x-icon" href="obrazky/favicon.png">  
+    </head>
+    
+    <body>
+          <div class="content">
+            <form class="to-print">
+                <h1><b>Slovičkáreň</b></h1>
+                <img class="tlac" src="obrazky/print.png" onclick="window.print()"><hr>
+                <div>
+                    Hra Názov patrí medzi logické hry, ktorá precvičí Vaše mozgové závity a kombinuje slovné a krížove hry. Cieľom hry je použiť zobrazené písmena a 
+                    skombinovať ich do slova. Jednoduchým posunutím prstov alebo myškou po obrazovke spojíte písmena, aby ste skombinovali správne slovo. Ak sa slovo 
+                    nachádza v krížovke, zobrazí sa v danom stĺpci alebo riadku. Ak si myslíte, že ste nenašli žiadne vhodné slovo, môžete použiť nápovedu. Po vyplnení 
+                    celej krížovky postupujete do ďalšiej úrovne. Hra obsahuje XY úrovni.
+                </div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+                <h2><b>Vysvetlívky</b></h2><hr>
+                <table>
+                    <tr><td><img class="napoveda" src="obrazky/help.png" alt="Nápoveda"></td> <th>Nápoveda - Kliknite na políčko, ktoré chcete otvoriť</th>
+                    <tr><td><img class="save" src="obrazky/save.png" alt="Uložiť"></td> <th>Uložiť - Hra sa uloží, a neskôr v nej môžete pokračovať</th>
+                    <tr><td><img class="on" src="obrazky/on.png" alt="Zvuk zapnutý"></td> <th>Zvuk zapnutý - Po kliknutí sa zvuk vypne </th>
+                    <tr><td><img class="off" src="obrazky/off.png" alt="Zvuk vypnutý"></td> <th>Zvuk vypnutý - Po kliknutí sa zvuk zapne </th>
+                </table>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        
+        <a id="tlacitko" href="hra.html">Hrať hru!</a> 
+            </form>
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+        <footer>
+              &copy; 2021 Katarína Tulejová
+          </footer>
+          
+          <script src="script.js"></script>        
+    </body>
 </html>
